@@ -1,0 +1,37 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "TOP assignment to create a battle ship game",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "watch": "jest --watch *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacifictones/BattleShip.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pacifictones/BattleShip/issues"
+  },
+  "homepage": "https://github.com/pacifictones/BattleShip#readme",
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "babel-jest": "^29.7.0",
+    "css-loader": "^6.10.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "jest": "^29.7.0",
+    "prettier": "3.2.5",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
