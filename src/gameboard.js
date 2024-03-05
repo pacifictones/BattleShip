@@ -27,15 +27,17 @@ class Gameboard {
     return coords;
   }
 
-  //   receiveAttack(y, x) {
-  //     if (boards[y][x] === 'ship') {
-  //         boards[y]
-  //     }
-  //   }
+  receiveAttack(y, x) {
+    if (this.board[y][x] === "ship") {
+      this.board[y][x] = "hit";
+    }
+  }
 }
 
 module.exports = Gameboard;
 const board = new Gameboard();
 board.placeShip(2, 0, 1);
 console.log(board.ships);
+console.log(board);
+board.receiveAttack(0, 1);
 console.log(board);

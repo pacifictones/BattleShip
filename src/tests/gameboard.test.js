@@ -19,8 +19,9 @@ test("Test Gameboard is setting direction", () => {
 });
 
 test("Test Gameboard is receiveAttack is working", () => {
-  const board = new Gameboard();
-  board.placeShip(2, 0, 1, 2);
+  const newBoard = new Gameboard();
+  newBoard.placeShip(2, 0, 1, 2);
+  newBoard.receiveAttack(0, 1);
 
-  expect(board.receiveAttack(0, 1)).toBe("hit");
+  expect(newBoard.board[0][1]).toBe("hit");
 });
